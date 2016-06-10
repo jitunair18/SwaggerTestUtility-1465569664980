@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="20" passed="20">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RestfulServicesTestSuite" duration-ms="2592" started-at="2016-06-09T16:10:54Z" finished-at="2016-06-09T16:10:57Z">
+    <groups>
+    </groups>
+    <test name="Restful Services Tests" duration-ms="2592" started-at="2016-06-09T16:10:54Z" finished-at="2016-06-09T16:10:57Z">
+      <class name="com.ibmwatson.devopsservices.swaggertestasset.TestNGTests">
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="4" started-at="2016-06-09T12:10:55Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/user/{username},delete]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={400=io.swagger.models.Response@932768de, 404=io.swagger.models.Response@9fe75e9f}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="1149" started-at="2016-06-09T12:10:55Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/store/inventory,get]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={200=io.swagger.models.Response@2503e437}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:55Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/pet/{petId},delete]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={400=io.swagger.models.Response@87f925f9, 404=io.swagger.models.Response@7f4c4b3}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:56Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/user/createWithList,post]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={default=io.swagger.models.Response@7cd3eb80}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="102" started-at="2016-06-09T12:10:56Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/pet/findByStatus,get]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={200=io.swagger.models.Response@7b8f0286, 400=io.swagger.models.Response@ef1ab60b}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:56Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/pet,put]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={400=io.swagger.models.Response@87f925f9, 404=io.swagger.models.Response@7f4c4b3, 405=io.swagger.models.Response@f93bc227}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="77" started-at="2016-06-09T12:10:56Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/pet/findByTags,get]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={200=io.swagger.models.Response@7b8f0286, 400=io.swagger.models.Response@8bae2e01}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:56Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/pet/{petId},post]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={405=io.swagger.models.Response@ce3cc860}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="116" started-at="2016-06-09T12:10:56Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/user/{username},get]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={200=io.swagger.models.Response@32e0959f, 400=io.swagger.models.Response@932768de, 404=io.swagger.models.Response@9fe75e9f}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:56Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/store/order/{orderId},delete]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={400=io.swagger.models.Response@87f925f9, 404=io.swagger.models.Response@a20e24a2}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:56Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/user,post]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={default=io.swagger.models.Response@7cd3eb80}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="224" started-at="2016-06-09T12:10:56Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/pet/{petId},get]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={200=io.swagger.models.Response@c7c8490b, 400=io.swagger.models.Response@87f925f9, 404=io.swagger.models.Response@7f4c4b3}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:57Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/user/{username},put]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={400=io.swagger.models.Response@e3ed0f89, 404=io.swagger.models.Response@9fe75e9f}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="88" started-at="2016-06-09T12:10:57Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/store/order/{orderId},get]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={200=io.swagger.models.Response@4b19703c, 400=io.swagger.models.Response@87f925f9, 404=io.swagger.models.Response@a20e24a2}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:57Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/pet/{petId}/uploadImage,post]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={200=io.swagger.models.Response@44c18dcb}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="107" started-at="2016-06-09T12:10:57Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/user/login,get]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={200=io.swagger.models.Response@d8e751ba, 400=io.swagger.models.Response@503c17b2}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="74" started-at="2016-06-09T12:10:57Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/user/logout,get]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={default=io.swagger.models.Response@7cd3eb80}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:57Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/pet,post]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={405=io.swagger.models.Response@ce3cc860}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:57Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/user/createWithArray,post]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={default=io.swagger.models.Response@7cd3eb80}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+        <test-method status="PASS" signature="executeRestfulTest(java.lang.String, java.lang.Object)[pri:0, instance:com.ibmwatson.devopsservices.swaggertestasset.TestNGTests@10fd9d27]" name="executeRestfulTest" duration-ms="0" started-at="2016-06-09T12:10:57Z" data-provider="dbconfig" finished-at="2016-06-09T12:10:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/store/order,post]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{response={200=io.swagger.models.Response@4b19703c, 400=io.swagger.models.Response@c899b5c4}, definition={Order=io.swagger.models.ModelImpl@c8f1681a, Category=io.swagger.models.ModelImpl@b4ea1f0d, User=io.swagger.models.ModelImpl@88e01c0c, Tag=io.swagger.models.ModelImpl@f293478d, Pet=io.swagger.models.ModelImpl@c030db03, ApiResponse=io.swagger.models.ModelImpl@199a16f}, baseURI=http://petstore.swagger.io/v2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeRestfulTest -->
+      </class> <!-- com.ibmwatson.devopsservices.swaggertestasset.TestNGTests -->
+    </test> <!-- Restful Services Tests -->
+  </suite> <!-- RestfulServicesTestSuite -->
+</testng-results>

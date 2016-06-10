@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RestfulServicesTestSuite">
+  <test name="Restful Services Tests">
+    <classes>
+       <class name="com.ibmwatson.devopsservices.swaggertestasset.TestNGTests"/>
+    </classes>
+  </test>
+</suite>
