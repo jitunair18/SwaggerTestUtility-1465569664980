@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="Create Runnable Jar for Project SwaggerTestCompatibility" default="main" basedir=".">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+	<property name="dir.lib.jar" value="${dir.buildfile}/lib"/>
+    <property name="dir.jarfile" value="${dir.buildfile}/output"/>
+	<property name="web.src.dir" value="${dir.buildfile}/src"/>
+	<property name="web.target.dir" value="${dir.buildfile}/compile"/>
+	<path id="web.classpath">
+	<fileset dir="${dir.lib.jar}">
+	<include name="**/*.jar"/>
+	</fileset>
+	</path>
+
+	<echo message="${dir.jarfile}" />
+	<echo message="reached here" />
+	<target name="compile" description="---> build for shre">
+	<echo message = "Entered target compile" />
+	<echo message="copying all the files to target dir " />
+	<copy todir="${web.target.dir}" >
+	<fileset dir="${web.src.dir}">
+	<include name="*.xml" />
+	</fileset>
+	</copy>
+	<echo message="Compiling the src folder to the target Directory "/>
+	<javac srcdir="${web.src.dir}"  destdir="${web.target.dir}" classpathref="web.classpath" debug="true" />
+	</target>
+	<target name="movejar" depends="compile">
+		<echo message="${web.target.dir}/com/ibmwatson/devopsservices/swaggertestasset" />
+	   <jar destfile="${dir.buildfile}/lib/swaggerfiles.jar"
+	      basedir="${web.target.dir}"
+	      excludes="**/Test.class">    	
+	   </jar>
+	</target>
+    <target name="create_run_jar" depends="movejar">
+        <jar destfile="${dir.jarfile}/SwaggerAsset.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com/ibmwatson/devopsservices/swaggertestasset/SwaggerCommandLine"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>   	
+            <fileset dir="${dir.jarfile}/bin"/>
+            
+        	<zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/swaggerfiles.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/rest-assured-2.9.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/selenium-java-2.53.0-srcs.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/selenium-java-2.53.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/selenium-server-standalone-2.53.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/swagger-core-1.5.8.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/swagger-models-1.5.9.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/swagger-parser-1.0.19.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/testng-6.9.10.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/slf4j-api-1.7.21.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/slf4j-simple-1.7.21.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/jackson-dataformat-yaml-2.7.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/jackson-annotations-2.7.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/jackson-databind-2.7.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/jackson-core-2.7.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/swagger-inflector-1.0.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/groovy-all-2.4.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/antlr-2.7.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/asm-3.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/asm-analysis-3.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/asm-commons-3.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/asm-tree-3.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/asm-util-3.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/commons-codec-1.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/commons-collections-3.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/commons-lang3-3.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/commons-logging-1.1.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/hamcrest-library-1.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/httpclient-4.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/httpcore-4.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/httpmime-4.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/tagsoup-1.2.1.jar"/>
+        </jar>
+    </target>
+		
+		<target name="main" depends="compile,create_run_jar,movejar">
+		</target>
+</project>

@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="RestfulServicesTestSuite">
-  <test name="Restful Services Tests">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><suite allow-return-values="false" configfailurepolicy="skip" data-provider-thread-count="10" group-by-instances="false" guice-stage="DEVELOPMENT" junit="false" name="RestfulServicesTestSuite" parallel="false" preserve-order="true" skipfailedinvocationcounts="false" thread-count="5">
+  <test allow-return-values="false" group-by-instances="false" junit="false" name="Restful Services Tests" preserve-order="true" skipfailedinvocationcounts="false">
+    <parameter name="propertiesfilepath" value="/Users/shreejit/Documents/workspace/SwaggerTestCompatibility/Data.properties"/> 
     <classes>
        <class name="com.ibmwatson.devopsservices.swaggertestasset.TestNGTests"/>
     </classes>
