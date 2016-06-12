@@ -24,7 +24,7 @@ public class SwaggerCommandLine {
 		List<String> suites = Lists.newArrayList();
 
 		// Update testng.xml file with latest parameter path
-		System.out.println("Now you do 5.40 to compile");
+		System.out.println("IBM Toolchains");
 		System.out.println("args[0] is: " + args[0]);
 		if (!modifyTestngxml(args[0])) {
 			// Something went wrong with file parsing
