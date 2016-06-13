@@ -2,5 +2,5 @@
 
 CLASSPATH=/tmp/output/SwaggerAsset.jar 
 java -cp $CLASSPATH com.ibmwatson.devopsservices.swaggertestasset.SwaggerCommandLine $1
-echo "make updates"
+echo "check deploy container piece working or not"
 echo $?
