@@ -43,7 +43,8 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 
 # Clone the conf files into the docker container
-RUN git clone https://github.com/jitunair18/SwaggerTestUtility-1465569664980.git /SwaggerTestCompatibility
+ADD ./output/SwaggerAsset.jar /tmp/output/SwaggerAsset.jar
+ADD ./swaggerShell.sh /tmp/swaggerShell.sh
 
 # If you're reading this and have any feedback on how this image could be
 #   improved, please open an issue or a pull request so we can discuss it!
