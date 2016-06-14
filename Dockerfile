@@ -1,51 +1,15 @@
-#
-# NOTE: THIS DOCKERFILE IS GENERATED VIA "update.sh"
-#
-# PLEASE DO NOT EDIT IT DIRECTLY.
-#
+FROM node:argon
 
-FROM buildpack-deps:jessie-curl
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-# A few problems with compiling Java from source:
-#  1. Oracle.  Licensing prevents us from redistributing the official JDK.
-#  2. Compiling OpenJDK also requires the JDK to be installed, and it gets
-#       really hairy.
-EXPOSE 9080
+# Install app dependencies
+COPY package.json /usr/src/app/
+RUN npm install
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		bzip2 \
-		unzip \
-		xz-utils \
-	&& rm -rf /var/lib/apt/lists/*
+# Bundle app source
+COPY . /usr/src/app
 
-# Default to UTF-8 file.encoding
-ENV LANG C.UTF-8
-
-# add a simple script that can auto-detect the appropriate JAVA_HOME value
-# based on whether the JDK or only the JRE is installed
-RUN { \
-		echo '#!/bin/sh'; \
-		echo 'set -e'; \
-		echo; \
-		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; \
-	} > /usr/local/bin/docker-java-home \
-	&& chmod +x /usr/local/bin/docker-java-home
-
-ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64/jre
-
-ENV JAVA_VERSION 7u101
-ENV JAVA_DEBIAN_VERSION 7u101-2.6.6-2~deb8u1
-
-RUN set -x \
-	&& apt-get update \
-	&& apt-get install -y \
-		openjdk-7-jre-headless="$JAVA_DEBIAN_VERSION" \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-
-# Clone the conf files into the docker container
-ADD ./output/SwaggerAsset.jar /tmp/output/SwaggerAsset.jar
-ADD ./swaggerShell.sh /tmp/swaggerShell.sh
-
-# If you're reading this and have any feedback on how this image could be
-#   improved, please open an issue or a pull request so we can discuss it!
+EXPOSE 8080
+CMD [ "npm", "start" ]
