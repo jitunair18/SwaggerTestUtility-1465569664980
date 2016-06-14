@@ -2,5 +2,5 @@
 
 CLASSPATH=/tmp/output/SwaggerAsset.jar 
 java -cp $CLASSPATH com.ibmwatson.devopsservices.swaggertestasset.SwaggerCommandLine $1
-echo "anything wrong with ibm containers 1:56 pm  change"
+echo "anything wrong with ibm containers 2:02 pm  change"
 echo $?
