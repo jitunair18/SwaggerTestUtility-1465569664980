@@ -13,3 +13,7 @@ COPY . /usr/src/app
 
 EXPOSE 8080 
 CMD [ "npm", "start" ]
+
+# Clone the conf files into the docker container
+ADD ./output/SwaggerAsset.jar /tmp/output/SwaggerAsset.jar
+ADD ./swaggerShell.sh /tmp/swaggerShell.sh
