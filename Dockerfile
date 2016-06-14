@@ -15,7 +15,7 @@ EXPOSE 8080
 CMD [ "npm", "start" ]
 
 #Install java and dependencies
-apt-get update ; apt-get install -y default-jre
+RUN apt-get update && apt-get install -y default-jre
 
 # Copy the execution dependencies on to the container
 ADD ./output/SwaggerAsset.jar /tmp/output/SwaggerAsset.jar
