@@ -5,4 +5,4 @@
 #
 
 FROM registry.ng.bluemix.net/ibmliberty
-EXPOST 9080
+EXPOSE 9080
