@@ -5,5 +5,4 @@
 #
 
 FROM registry.ng.bluemix.net/ibmliberty
-LABEL description=“This is test file”
 EXPOST 9080
