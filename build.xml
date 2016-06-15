@@ -39,9 +39,9 @@
             <manifest>
                 <attribute name="Main-Class" value="com/ibmwatson/devopsservices/swaggertestasset/SwaggerCommandLine"/>
                 <attribute name="Class-Path" value="."/>
+
             </manifest>  
-        	<echo message= "hello i am here" />
-            <fileset dir="${dir.jarfile}/bin"/>
+
             
         	<zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/swaggerfiles.jar"/>
             <zipfileset excludes="META-INF/*.SF" src="${dir.buildfile}/lib/rest-assured-2.9.0.jar"/>
